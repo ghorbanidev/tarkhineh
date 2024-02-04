@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "aaron-bond.better-comments",
+        "usernamehw.errorlens",
+        "esbenp.prettier-vscode",
+        "KalimahApps.tailwind-config-viewer",
+        "bradlc.vscode-tailwindcss",
+        "alfredbirk.tailwind-documentation",
+        "alfredbirk.tailwind-documentation",
+        "dbaeumer.vscode-eslint"
+    ]
+}

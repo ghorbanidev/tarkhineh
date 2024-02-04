@@ -1,20 +1,88 @@
-import type { Config } from 'tailwindcss'
+import type {Config} from 'tailwindcss';
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/app/**/*.{jsx,tsx}'],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      borderRadius: {
+        '4xl': '32px',
+        '5xl': '64px',
+      },
+      space: {
+        30: '7.5rem',
+      },
+      boxShadow: {
+        '2': '0px 2px 2px 0px rgba(0, 0, 0, 0.25)',
+        '4': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+        '6': '0px 6px 6px 0px rgba(0, 0, 0, 0.25)',
+        '8': '0px 8px 8px 0px rgba(0, 0, 0, 0.25)',
+        '12': '0px 12px 12px 0px rgba(0, 0, 0, 0.25)',
+        '16': '0px 16px 16px 0px rgba(0, 0, 0, 0.25)',
+        'cards':
+          '0px 0px 0px 0px rgba(0, 0, 0, 0.1),0px 1px 2px 0px rgba(0, 0, 0, 0.1),0px 4px 4px 0px rgba(0, 0, 0, 0.09),0px 9px 5px 0px rgba(0, 0, 0, 0.05),0px 16px 6px 0px rgba(0, 0, 0, 0.01),0px 25px 7px 0px rgba(0, 0, 0, 0)',
+        'contactCards':
+          '0px 0px 0px 0px rgba(0, 0, 0, 0.1),0px 3px 6px 0px rgba(0, 0, 0, 0.1),0px 11px 11px 0px rgba(0, 0, 0, 0.09),0px 24px 14px 0px rgba(0, 0, 0, 0.05),0px 42px 17px 0px rgba(0, 0, 0, 0.01),0px 66px 18px 0px rgba(0, 0, 0, 0)',
+      },
+      colors: {
+        Primary: '#417F56',
+        black: '#0C0C0C',
+        white: '#FFFFFF',
+        'Shade-1': '#396F4B',
+        'Shade-2': '#315F41',
+        'Shade-3': '#294F36',
+        'Shade-4': '#21402B',
+        'Shade-5': '#183020',
+        'Shade-6': '#102016',
+        'Shade-7': '#08100B',
+        'Tint-1': '#E5F2E9',
+        'Tint-2': '#CAE4D3',
+        'Tint-3': '#B0D7BD',
+        'Tint-4': '#96C9A7',
+        'Tint-5': '#7CBC91',
+        'Tint-6': '#61AE7B',
+        'Tint-7': '#4E9968',
+        'Gray-1': '#F9F9F9',
+        'Gray-2': '#E1E1E1',
+        'Gray-3': '#EDEDED',
+        'Gray-4': '#CBCBCB',
+        'Gray-5': '#ADADAD',
+        'Gray-6': '#757575',
+        'Gray-7': '#717171',
+        'Gray-8': '#353535',
+        error: '#C30000',
+        'Error-light': '#ED2E2E',
+        'Error-extralight': '#FFF2F2',
+        success: '#00966D',
+        'success-light': '#00BA88',
+        'Success-extralight': '#F3FDFA',
+        warning: '#A9791C',
+        'Warning-light': '#F4B740',
+        'Warning-extralight': '#FFF8E1',
+      },
+      fontSize: {
+        'display-1': ['4rem', {lineHeight: '90px', fontWeight: '700'}],
+        'display-2': ['3.5rem', {lineHeight: '67px', fontWeight: '700'}],
+        'Header-1': ['2.75rem', {lineHeight: '62px', fontWeight: '700'}],
+        'Header-2': ['2.5rem', {lineHeight: '56px', fontWeight: '700'}],
+        'Header-3': ['2rem', {lineHeight: '45px', fontWeight: '700'}],
+        'Header-4': ['1.5rem', {lineHeight: '34px', fontWeight: '700'}],
+        'Header-5': ['1.25rem', {lineHeight: '28px', fontWeight: '700'}],
+        'Header-6': ['1rem', {lineHeight: '22px', fontWeight: '700'}],
+        'Header-7': ['1.25rem', {lineHeight: '36px', fontWeight: '600'}],
+        'Body-XL': ['1.25rem', {lineHeight: '36px', fontWeight: '400'}],
+        'Body-LG': ['1.125rem', {lineHeight: '32px', fontWeight: '400'}],
+        'Body-MD': ['1rem', {lineHeight: '29px', fontWeight: '400'}],
+        'Body-SM': ['0.875rem', {lineHeight: '25px', fontWeight: '400'}],
+        'Caption-MD': ['0.75rem', {lineHeight: '22px', fontWeight: '400'}],
+        'Button-Sm': ['0.875rem', {lineHeight: '24px', fontWeight: '500'}],
+        'Overlay-LG': ['1rem', {lineHeight: '29px', fontWeight: '400'}],
+        'Overlay-SM': ['0.75rem', {lineHeight: '21px', fontWeight: '700'}],
+      },
+      fontFamily: {
+        estedad: ['var(--font-estedad)'],
       },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
